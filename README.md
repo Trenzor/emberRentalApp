@@ -46,7 +46,18 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+Make sure to include the API key for enabling the maps when you `ember build` this for deployment. 
+
+```bash
+LEAFLET_MAPS_API_KEY=<your key> ember build --environment=development
+```
+
+I used surge.sh to deploy the dist build for free. Make sure to rename index.html to 200.html to enable the client-side routing.
+
+```bash
+mv dist/index.html dist/200.html
+surge dist <someName>.surge.sh
+```
 
 ## Further Reading / Useful Links
 

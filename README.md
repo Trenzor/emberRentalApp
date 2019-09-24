@@ -1,6 +1,7 @@
 # super-rentals
 
 This README outlines the details of collaborating on this Ember application.
+
 This app is a working example of how to use EmberJS. 
 
 ## Prerequisites
